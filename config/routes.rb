@@ -1,7 +1,24 @@
 Rails.application.routes.draw do
-  root 'homepage#index'
+  # v1
+  # root 'homepage#index'
+  # resources :todos, only: %i[index create update destroy]
+  # get '*path', to: 'home#index', constraints: ->(req) { !req.xhr? && req.format.html? }
 
-  get '*path', to: 'home#index', constraints: ->(req) { !req.xhr? && req.format.html? }
+
+    # v2
+    # root 'homepage#index'
+    # resources :todos, only: %i[index create update destroy show]
+    # get '*path', to: 'homepage#index', constraints: ->(req) { !req.xhr? && req.format.html? }
+
+    root 'homepage#index'
+
+    # Маршрути для API
+    resources :todos, only: %i[index create update destroy show]
+
+    # Ловити всі інші запити та передавати їх React-додатку
+    get '*path', to: 'homepage#index', constraints: ->(req) { !req.xhr? && req.format.html? }
+
+
 
   # get "homepage/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

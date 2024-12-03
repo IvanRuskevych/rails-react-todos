@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2a7c36d-bcc4-42f3-b98e-b57ab840738a" name="Changes" comment="add: controllers &amp; TodoList component">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/routes/index.jsx" afterDir="false" />
+    <list default="true" id="d2a7c36d-bcc4-42f3-b98e-b57ab840738a" name="Changes" comment="add: Initial commit">
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/Todos/TodoItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/routes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IvanRuskevych&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/IvanRuskevych/rails-react-todos.git&quot;,
+    &quot;accountId&quot;: &quot;c9231f1b-36bb-4fde-8f25-d5195a145bf7&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -48,23 +62,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Rails.rails-react-todos.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "//wsl$/Ubuntu/home/fsdev8080/rails-react-todos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Rails.rails-react-todos.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu/home/fsdev8080/rails-react-todos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Rails.rails-react-todos">
     <configuration name="rails-react-todos" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="rails-react-todos" />
@@ -145,7 +159,8 @@
       <updated>1732915587751</updated>
       <workItem from="1732915589594" duration="1614000" />
       <workItem from="1733218539182" duration="809000" />
-      <workItem from="1733219579645" duration="1820000" />
+      <workItem from="1733219579645" duration="5331000" />
+      <workItem from="1733225624521" duration="4485000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -171,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732916538180</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add: Initial commit">
+      <option name="closed" value="true" />
+      <created>1733221643176</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733221643176</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +203,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add: controllers &amp; TodoList component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: controllers &amp; TodoList component" />
+    <MESSAGE value="add: Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Initial commit" />
   </component>
 </project>
