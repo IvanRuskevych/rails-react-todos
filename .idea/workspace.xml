@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2a7c36d-bcc4-42f3-b98e-b57ab840738a" name="Changes" comment="add: Initial commit">
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/components/Todos/TodoItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/routes/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
