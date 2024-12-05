@@ -5,17 +5,13 @@ Rails.application.routes.draw do
   # get '*path', to: 'home#index', constraints: ->(req) { !req.xhr? && req.format.html? }
 
 
-    # v2
-    # root 'homepage#index'
-    # resources :todos, only: %i[index create update destroy show]
-    # get '*path', to: 'homepage#index', constraints: ->(req) { !req.xhr? && req.format.html? }
+  # v2
+  # root 'homepage#index'
+  # resources :todos, only: %i[index create update destroy show]
+  # get '*path', to: 'homepage#index', constraints: ->(req) { !req.xhr? && req.format.html? }
 
     root 'homepage#index'
-
-    # Маршрути для API
     resources :todos, only: %i[index create update destroy show]
-
-    # Ловити всі інші запити та передавати їх React-додатку
     get '*path', to: 'homepage#index', constraints: ->(req) { !req.xhr? && req.format.html? }
 
 
