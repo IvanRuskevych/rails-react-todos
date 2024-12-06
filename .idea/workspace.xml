@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d2a7c36d-bcc4-42f3-b98e-b57ab840738a" name="Changes" comment="add: Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/todos_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/Todos/TodoForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/Todos/TodoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Todos/TodoList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +59,24 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Rails.rails-react-todos.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu/home/fsdev8080/rails-react-todos&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Rails.rails-react-todos.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/fsdev8080/rails-react-todos",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\RubyMine 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Rails.rails-react-todos">
     <configuration name="rails-react-todos" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="rails-react-todos" />
@@ -155,6 +159,7 @@
       <workItem from="1733218539182" duration="809000" />
       <workItem from="1733219579645" duration="5331000" />
       <workItem from="1733225624521" duration="4485000" />
+      <workItem from="1733485964814" duration="1447000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

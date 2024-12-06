@@ -6,14 +6,14 @@ const TodoList = () => {
     const [todos, setTodos] = useState([]);
 
     useEffect(() => {
-        axios.get('/todos').then((response) => {
-            console.log({response})
+        axios.get('/api/v1/todos').then((response) => {
+            console.log(response.data)
             setTodos(response.data)
         });
     }, []);
 
     const deleteTodo = (id) => {
-        axios.delete(`/todos/${id}`).then(() => setTodos(todos.filter((todo) => todo.id !== id)));
+        axios.delete(`/api/v1/todos/${id}`).then(() => setTodos(todos.filter((todo) => todo.id !== id)));
     };
 
     return (

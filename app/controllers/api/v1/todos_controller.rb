@@ -1,5 +1,4 @@
-class TodosController < ApplicationController
-
+class Api::V1::TodosController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
 
   def index
@@ -42,4 +41,5 @@ class TodosController < ApplicationController
   def todo_params
     params.require(:todo).permit(:title, :description, :due_date, :status)
   end
+
 end

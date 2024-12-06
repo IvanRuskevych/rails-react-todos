@@ -9,7 +9,10 @@ const TodoForm = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get(`/todos/${id}`).then((response) => setTodo(response.data));
+            axios.get(`/api/v1/todos/${id}`).then((response) => {
+                console.log(response.data)
+                setTodo(response.data)
+            });
         }
     }, [id]);
 
@@ -21,8 +24,8 @@ const TodoForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const method = id ? 'patch' : 'post';
-        const url = id ? `/todos/${id}` : '/todos';
-        axios[method](url, {todo: {...todo}})
+        const url = id ? `/api/v1/todos/${id}` : '/api/v1/todos';
+        axios[method](url, {...todo})
             .then(() => navigate('/todos'))
             .catch((error) => console.error(error));
     };
